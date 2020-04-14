@@ -8,12 +8,17 @@ Created on Thu Apr  9 11:29:13 2020
 
 
 import socket
+#importing the module/library needed for socket programming
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+#method socket is used to create an object s
 
 local_hostname = socket.gethostname()
+#gethostname is a method to get the name of the host i.e the system
+#or you can provide it explicitly like 'skbuddy'
 
 local_fqdn = socket.getfqdn()
+
 
 ip_address = socket.gethostbyname(local_hostname)
 
@@ -50,6 +55,6 @@ while True:
         break                
 
 
-#clt.send(bytes("Socket Programming in Python","utf-8"))
+
         
 
